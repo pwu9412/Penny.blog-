@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>聯絡我 | 吳娉亭</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: "Noto Serif TC", serif;
+      background-color: #faf7f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
+    header {
+      background-color: #d8cfc4;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4a3f35;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+      line-height: 1.8;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    form {
+      margin-top: 2rem;
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: "Noto Serif TC", serif;
+      font-size: 1rem;
+      background-color: #fffaf5;
+    }
+
+    textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    button {
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.5rem;
+      background-color: #a89585;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      font-family: "Noto Serif TC", serif;
+    }
+
+    button:hover {
+      background-color: #8a7469;
+    }
+
+    .social {
+      margin-top: 3rem;
+      font-size: 0.95rem;
+    }
+
+    .social a {
+      display: inline-block;
+      margin-right: 1rem;
+      color: #4a3f35;
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee7df;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>聯絡我</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">自介</a>
+      <a href="portfolio.html">作品集</a>
+      <a href="contact.html">聯絡方式</a>
+      <a href="blog.html">網誌</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>歡迎寫信給我</h2>
+    <p>
+      如果你對我的出版作品有任何想法、合作邀約、媒體詢問或單純想說聲「你好」，都歡迎透過以下方式聯繫我。我會盡快回覆你的訊息。
+    </p>
+
+    <form action="#" method="post">
+      <label for="name">姓名</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">電子信箱</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">留言內容</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">送出訊息</button>
+    </form>
+
+    <div class="social">
+      <p>📮 其他聯絡方式：</p>
+      <a href="mailto:your@email.com">電子郵件</a>
+      <a href="https://www.instagram.com/yourname" target="_blank">Instagram</a>
+      <a href="https://www.facebook.com/yourpage" target="_blank">Facebook</a>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 吳娉亭 | 聯絡資訊僅供合作用途
+  </footer>
+</body>
+</html>
