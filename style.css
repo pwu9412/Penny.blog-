@@ -1,1 +1,175 @@
+/* 字體與基本設定 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap');
 
+body {
+  font-family: 'Noto Serif TC', serif;
+  background-color: #faf7f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
+}
+
+/* 頁首區 */
+header {
+  background-color: #d8cfc4;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #3e332c;
+}
+
+/* 導覽列 */
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #4a3f35;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #7a6b5a;
+  text-decoration: underline;
+}
+
+/* 主內容區 */
+main {
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: #4a3f35;
+}
+
+h3 {
+  color: #4a3f35;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* 表單樣式 */
+form {
+  margin-top: 2rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #3e332c;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: 'Noto Serif TC', serif;
+  background-color: #fffdfa;
+}
+
+textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #a89585;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #8a7469;
+}
+
+/* 作品集卡片 */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.item {
+  background-color: #fff;
+  border: 1px solid #eae5df;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.item:hover {
+  transform: translateY(-4px);
+}
+
+.item img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.item h3 {
+  margin: 0;
+}
+
+/* 出現動畫用 */
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #eee7df;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 4rem;
+}
+
+/* 響應式調整 */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 0.5rem 0.8rem;
+  }
+
+  main {
+    padding: 0 1rem;
+  }
+}
