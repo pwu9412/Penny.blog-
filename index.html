@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>我的出版作品 | 吳娉亭</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* 基本排版與色彩 */
+    body {
+      font-family: "Noto Serif TC", serif;
+      background-color: #faf7f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
+    header {
+      background-color: #d8cfc4;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4a3f35;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .intro p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+
+    .book-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .book-item {
+      background-color: #ffffff;
+      border: 1px solid #e0dcd8;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .book-item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .book-item h3 {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .book-item p {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee7df;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>吳娉亭的出版作品</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">自介</a>
+      <a href="portfolio.html">作品集</a>
+      <a href="contact.html">聯絡方式</a>
+      <a href="blog.html">網誌</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>歡迎來到我的出版作品集。我喜歡透過文字、影像與排版，創作屬於自己的故事與觀點。以下是我歷年來出版的小誌、散文集與合作作品。</p>
+    </section>
+
+    <section class="book-list">
+      <div class="book-item">
+        <img src="assets/book1.jpg" alt="作品封面">
+        <h3>《夏日迴聲》</h3>
+        <p>2024年出版的小誌，記錄盛夏午後的聲音與感覺。攝影與文字交織成一份靜謐的回憶。</p>
+      </div>
+      <div class="book-item">
+        <img src="assets/book2.jpg" alt="作品封面">
+        <h3>《日光筆記》</h3>
+        <p>一份關於日常觀察的筆記集，記下光影、對話與行人的微妙時刻。</p>
+      </div>
+      <div class="book-item">
+        <img src="assets/book3.jpg" alt="作品封面">
+        <h3>《與夢交談》</h3>
+        <p>與插畫家合作的文藝刊物，談夢境與成長，內頁以手繪搭配散文呈現。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 吳娉亭 | 所有作品版權所有
+  </footer>
+</body>
+</html>
