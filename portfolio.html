@@ -1,1 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>作品集 | 吳娉亭</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: "Noto Serif TC", serif;
+      background-color: #faf7f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
 
+    header {
+      background-color: #d8cfc4;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #4a3f35;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 3rem auto;
+      padding: 0 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .item {
+      background-color: #fff;
+      border: 1px solid #eae5df;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .item:hover {
+      transform: translateY(-4px);
+    }
+
+    .item img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin-bottom: 1rem;
+    }
+
+    .item h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #4a3f35;
+    }
+
+    .item p {
+      font-size: 0.95rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #eee7df;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>作品集</h1>
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="about.html">自介</a>
+      <a href="portfolio.html">作品集</a>
+      <a href="contact.html">聯絡方式</a>
+      <a href="blog.html">網誌</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>紙上的記憶與創作</h2>
+    <div class="gallery">
+      <div class="item">
+        <img src="assets/zine01.jpg" alt="夏日迴聲 Zine">
+        <h3>《夏日迴聲》</h3>
+        <p>以攝影與短詩記錄盛夏午後的氣味與聲音，手工裝訂，限量發行 30 本。</p>
+      </div>
+
+      <div class="item">
+        <img src="assets/zine02.jpg" alt="窗邊詩集">
+        <h3>《窗邊筆記》</h3>
+        <p>詩集選錄 2023 至 2024 年的創作，探討時間、孤獨與日常的靜默時刻。</p>
+      </div>
+
+      <div class="item">
+        <img src="assets/photo01.jpg" alt="黑白攝影選集">
+        <h3>《聲音之外》</h3>
+        <p>黑白攝影集，捕捉城市中的留白空間，搭配內文手寫感語錄，呈現視覺與心靈的交織。</p>
+      </div>
+
+      <div class="item">
+        <img src="assets/zine03.jpg" alt="夢境主題書冊">
+        <h3>《夢的摺頁》</h3>
+        <p>一本關於夢境的主題小書，運用拼貼、詩句與紙材組合打造如夢似幻的閱讀體驗。</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 吳娉亭 | 所有作品與圖像版權所有
+  </footer>
+</body>
+</html>
